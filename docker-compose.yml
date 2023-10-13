@@ -1,0 +1,50 @@
+version: '3.5'
+services:
+  frontend:
+    container_name: kdd-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
+      NEXT_PUBLIC_DATABASE_URL: ${NEXT_PUBLIC_DATABASE_URL}
+      NEXTAUTH_URL: ${NEXTAUTH_URL}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET}
+      JWT_SECRET: ${JWT_SECRET}
+      JWT_EXPIRATION_TIME: ${JWT_EXPIRATION_TIME}
+      NEXTAUTH_SECRET: ${NEXTAUTH_SECRET}
+    # ports:
+    #   - "3000:3000"
+    expose:
+      - 3000
+    networks:
+      - nextjs
+
+  nginx:
+    container_name: kdd-frontend-nginx
+    build: ./nginx
+    restart: unless-stopped
+    volumes:
+      - ./log:/var/log/nginx
+    networks:
+      - proxy
+      - nextjs
+    depends_on:
+      - frontend
+    environment:
+      - VIRTUAL_HOST=kdd.csie.ntust.edu.tw
+      - VIRTUAL_NETWORK=nginx-proxy
+      - VIRTUAL_PORT=80
+      - LETSENCRYPT_HOST=kdd.csie.ntust.edu.tw
+      - LETSENCRYPT_EMAIL=ntust-kdd-lab@googlegroups.com
+
+networks:
+  proxy:
+    name: self-nginx-proxy
+    external: true
+  nextjs:
+    name: nextjs
+    driver: bridge

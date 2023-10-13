@@ -1,0 +1,20 @@
+{
+  "navbar": {
+    "advisor": "指導教授",
+    "members": "實驗室成員",
+    "events": "行事曆",
+    "contact": "聯絡我們",
+    "language": "English"
+  },
+  "footer": {
+    "lab": "知識探索暨資料探勘實驗室",
+    "address": "106 台北市大安區基隆路四段 43 號 TR-520",
+    "tel": "886-2-2733-3141 #7473",
+    "navigate": "網站導覽",
+    "advisor": "指導教授",
+    "members": "實驗室成員",
+    "events": "行事曆",
+    "contact": "聯絡我們"
+  },
+  "header": "知識探索暨資料探勘實驗室 國立臺灣科技大學"
+}

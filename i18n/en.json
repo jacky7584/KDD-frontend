@@ -1,0 +1,20 @@
+{
+  "navbar": {
+    "advisor": "Advisor",
+    "members": "Members",
+    "events": "Events",
+    "contact": "Contact",
+    "language": "中文"
+  },
+  "footer": {
+    "lab": "Knowledge Discovery and Data Mining Laboratory",
+    "address": "TR-520, No.43, Sec. 4, Keelung Rd., Da-An Dist., Taipei City 106, Taiwan",
+    "tel": "886-2-2733-3141 #7473",
+    "navigate": "Site Map",
+    "advisor": "Advisor",
+    "members": "Members",
+    "events": "Events",
+    "contact": "Contact"
+  },
+  "header": "NTUST KDD Lab"
+}

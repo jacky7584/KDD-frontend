@@ -59,11 +59,11 @@ export default function Footer() {
                     </a>
                   </Link>
 
-                  <Link href="/events" passHref>
+                  {/* <Link href="/events" passHref>
                     <a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm" type="link">
                       {content[locale]['events']}
                     </a>
-                  </Link>
+                  </Link> */}
 
                   <Link href="/contact" passHref>
                     <a className="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm" type="link">

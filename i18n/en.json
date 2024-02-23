@@ -16,5 +16,27 @@
     "events": "Events",
     "contact": "Contact"
   },
-  "header": "NTUST KDD Lab"
+  "header": "NTUST KDD Lab",
+  "research": {
+    "title": "Research Topics",
+    "content": "The main research area is Data Mining, which involves extracting various kinds of information from data and transforming it into a knowledge structure that is easy to comprehend and apply.",
+    "topics": {
+      "SLUL": "Supervised and Unsupervised Learning",
+      "SMBD": "Stream Mining and Big Data",
+      "NLP": "Natural Language Processing",
+      "STDM": "Spatial and Temporal Data Mining",
+      "RS": "Recommendation System",
+      "SN": "Social Networks",
+      "AN": "Attention Network"
+    },
+    "descriptions": {
+      "SLUL": "Perform supervised or unsupervised learning on data, such as classification or clustering, to find out the patterns of the data, which can help understand the data's features.",
+      "SMBD": "Research on processing high-traffic, real-time, or huge data such as data streaming and big data that traditional algorithms cannot handle.",
+      "NLP": "Analyze the purpose or emotion of the speaker or author through the content of the text.",
+      "STDM": "Use data mining technology to find location, time, route, etc. patterns from datasets containing relevant time and space information.",
+      "RS": "The goal is to select the most suitable items to recommend to the user based on the preferences or needs of different users from many things.",
+      "SN": "The problem of maximizing influence in social networks is to analyze the relationship between user nodes so that messages can be spread or blocked faster and more accurately.",
+      "AN": "Explore applying attention mechanisms in different data types and situations to enhance the model's capture and understanding of key information."
+    }
+  }
 }

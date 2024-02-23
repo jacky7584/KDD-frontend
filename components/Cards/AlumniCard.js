@@ -5,7 +5,7 @@ export default function AlumniCard({ name, subName, avatar, github, email }) {
   let avatarUrl;
   if (avatar.data.attributes['format']) {
     if (avatar.data.attributes.format['small']) {
-      avatarUrl = avatar.data.attributes.formats.small.url;
+      avatarUrl = avatar.data.attributes.format.small.url;
     }
   } else {
     avatarUrl = avatar.data.attributes.url;

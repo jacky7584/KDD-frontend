@@ -81,7 +81,7 @@ export default function Navbar(props) {
                   </a>
                 </Link>
               </li>
-              <li className="flex items-center ">
+              <li className="flex items-center hidden">
                 <Link href="/events" passHref>
                   <a
                     className="hover:text-slate-500 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
@@ -105,12 +105,13 @@ export default function Navbar(props) {
               </li>
 
               <li className="flex items-center ">
-                <Link href="/dashboard" locale={false} passHref>
+                <Link href="http://140.118.46.109/plm/Client/" locale={false} passHref>
                   <a
                     className="hover:text-slate-500 text-slate-700 px-3 py-4 lg:py-2 flex items-center text-md uppercase font-bold"
                     type="link"
                   >
-                    <i className="bi bi-speedometer2"></i>
+                    {/* <i className="bi bi-speedometer2"></i> */}
+                    <span className="inline-block">Aras</span>
                     {/* <i className="text-slate-400 bi bi-box-arrow-up-right text-lg leading-lg " /> */}
                   </a>
                 </Link>

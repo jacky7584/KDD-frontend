@@ -16,5 +16,27 @@
     "events": "行事曆",
     "contact": "聯絡我們"
   },
-  "header": "知識探索暨資料探勘實驗室 國立臺灣科技大學"
+  "header": "知識探索暨資料探勘實驗室 國立臺灣科技大學",
+  "research": {
+    "title": "研究方向",
+    "content": "主要研究領域為資料探勘（Data Mining）技術，其概念在於從資料當中提取各種資訊，轉化為易於理解的知識結構以供進一步應用。",
+    "topics": {
+      "SLUL": "監督式與非監督式學習（Supervised and Unsupervised Learning）",
+      "SMBD": "資訊串流探勘與大數據（Stream Mining and Big Data）",
+      "NLP": "自然語言處理（Natural Language Processing）",
+      "STDM": "空間與時序資料探勘（Spatial and Temporal Data Mining）",
+      "RS": "推薦系統（Recommendation System）",
+      "SN": "社群網路（Social Networks）",
+      "AN": "注意力網路（Attention Network）"
+    },
+    "descriptions": {
+      "SLUL": "對資料進行監督式或非監督式學習，如分類或分群，找出資料的行為模式，有助於理解資料的特性。",
+      "SMBD": "處理傳統演算法無法處理的高流量、即時性或巨大資料如資料串流及大數據之研究。",
+      "NLP": "藉由文句內容來分析發言者、作者的目的或情感等資訊。",
+      "STDM": "運用資料探勘技術從含有時間空間之相關資訊的資料集中，找出有關地點、時間、路徑等行為模式。",
+      "RS": "目標在於從大量的事物之中，藉由不同使用者的喜好或需求，挑選最適合推薦給該使用者的項目。",
+      "SN": "社群網路中影響最大化問題，藉由分析各個用戶節點間的關係讓消息能夠更快更精準的傳播出去或是阻擋下來。",
+      "AN": "探索注意力機制在不同資料類型和情境中的應用，以增強模型對關鍵資訊的捕捉與理解。"
+    }
+  }
 }

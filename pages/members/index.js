@@ -9,17 +9,22 @@ import axiosInstance from '../../components/axiosInstance';
 import en from '../../i18n/en.json';
 import zh from '../../i18n/zh.json';
 
+import data from '../../public/members/members.json';
+
 const title = {
   en: { title: en.header, prefix: en.navbar.members },
   zh: { title: zh.header, prefix: zh.navbar.members },
 };
 
 export async function getServerSideProps({ locale }) {
-  const res = await axiosInstance.get(
-    `/members-page?populate[MasterMembers][populate]=%2A&populate[AlumniMembers][populate]=%2A`
-  );
-  const json = await res.data;
-  const content = json['data']['attributes'];
+  //  read data from local JSON file
+  // const res = await axiosInstance.get(
+  //   `/members-page?populate[MasterMembers][populate]=%2A&populate[AlumniMembers][populate]=%2A`
+  // );
+  // const json = await res.data;
+  // const content = json['data']['attributes'];
+
+  const content = data.data.attributes;
 
   return {
     props: { content, locale },

@@ -16,7 +16,7 @@ export default function AlumniCard({ name, subName, avatar, github, email }) {
         <div className="flex max-w-4/12">
           <picture className="max-w-[80px] aspect-square m-2">
             <img
-              src={`${process.env.NEXT_PUBLIC_API_URL}${avatarUrl}`}
+              src={avatarUrl}
               alt={name}
               loading="lazy"
               className="w-full h-full rounded-full shadow-lg object-cover"
